@@ -61,7 +61,7 @@ export function setDns(data) {
     if (window.isDebug === 1)
         data = window.dns;
     else if (isIptveditor === true && window.isDebug !== 1)
-        data = `${process.env.REACT_APP_IPTVEDITOR_API}webplayer`;
+        data = `${import.meta.env.REACT_APP_IPTVEDITOR_API}webplayer`;
     else {
         if (data[data.length - 1] !== "/")
             data += "/";

@@ -35,7 +35,7 @@ export function useProvideAuth() {
       }
       if(result && result.user_info){
         if(result.iptveditor)
-          axios.setDns(`${process.env.REACT_APP_IPTVEDITOR_API}webplayer`);
+          axios.setDns(`${import.meta.env.REACT_APP_IPTVEDITOR_API}webplayer`);
         if(result.user_info.auth === 0)
           failFallback("No account found","No account found with inserted credentials." + (window.location.host.includes("iptveditor.com") ? "<br/>To login use your IPTVEditor's playlist username and password, not your email." : ""));
         else if(result.user_info.auth){

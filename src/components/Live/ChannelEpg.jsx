@@ -7,7 +7,7 @@ import DB from "../../other/local-db"
 import {getSingleEpgNow, downloadEpgData} from "../../other/epg-database"
 import {generateUrl} from "../../other/generate-url"
 
-const dateFormat = require("dateformat");
+import dateFormat from "dateformat";
 
 const HeaderChannel = styled.div`
 padding-bottom: .4rem!important;

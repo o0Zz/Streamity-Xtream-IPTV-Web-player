@@ -1,7 +1,7 @@
 import React, {useRef,useState,useEffect} from "react"
 import ReactPlayer from 'react-player'
 import {useSelector} from "react-redux"
-import Fullscreen from "../Live/Fullscreen.js"
+import Fullscreen from "../Live/Fullscreen"
 import Button from "./Buttons/Button"
 import VolumeButton from "./Buttons/VolumeButton"
 import PiPButton from "./Buttons/PiPButton"
